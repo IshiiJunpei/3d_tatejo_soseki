@@ -94,7 +94,8 @@
 
 <script>
 Q3D.Config.orthoCamera = true;
-Q3D.Config.viewpoint = {lookAt:{x:0.0,y:0.0,z:0.0},pos:{x:1.7172886266850936e-21,y:141.42135623723888,z:0.000141421356237286}};
+Q3D.Config.viewpoint = {lookAt:{x:1.21275075021086,y:1.2184740106260308e-16,z:-45.31063064506584},pos:{x:-1.251756702093554,y:98.8639844919528,z:55.78258759133453}};
+Q3D.Config.localMode = true;
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
 
 var app = Q3D.application,
@@ -112,7 +113,7 @@ app.addEventListener("sceneLoaded", function () {
 });
 
 // load the scene
-app.loadSceneFile("./data/index/scene.json", function () {
+app.loadSceneFile("./data/index/scene.js", function () {
   app.start();
 
   Q3D.gui.init();   // initialize dat-gui panel
