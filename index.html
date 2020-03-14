@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
 <script src="./threejs/three.min.js"></script>
 <script src="./threejs/OrbitControls.js"></script>
-
+<script src="./proj4js/proj4.js"></script>
 <script src="./dat-gui/dat.gui.min.js"></script>
 <script src="./Qgis2threejs.js"></script>
 <script src="./dat-gui_panel.js"></script>
@@ -93,8 +93,8 @@
 <div id="footer"></div>
 
 <script>
-Q3D.Config.orthoCamera = true;
-Q3D.Config.viewpoint = {lookAt:{x:1.21275075021086,y:1.2184740106260308e-16,z:-45.31063064506584},pos:{x:-1.251756702093554,y:98.8639844919528,z:55.78258759133453}};
+Q3D.Config.autoZShift = true;
+Q3D.Config.viewpoint = {lookAt:{x:-9.312837414562196,y:-2.296649328735214e-16,z:-133.35447981115342},pos:{x:-6.705114012635138,y:118.98328080656384,z:72.46737100520804}};
 Q3D.Config.localMode = true;
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
 
